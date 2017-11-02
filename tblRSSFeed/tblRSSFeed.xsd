@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="tblRSSFeed" targetNamespace="http://tempuri.org/tblRSSFeed.xsd" xmlns:mstns="http://tempuri.org/tblRSSFeed.xsd" xmlns="http://tempuri.org/tblRSSFeed.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="HomePageConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="HomePageConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.HomePageConnectionString.ConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="tblRSSFeed" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="tblRSSFeed" msprop:Generator_DataSetName="tblRSSFeed">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblRSSFeed" msprop:Generator_UserTableName="tblRSSFeed" msprop:Generator_RowDeletedName="tblRSSFeedRowDeleted" msprop:Generator_RowChangedName="tblRSSFeedRowChanged" msprop:Generator_RowClassName="tblRSSFeedRow" msprop:Generator_RowChangingName="tblRSSFeedRowChanging" msprop:Generator_RowEvArgName="tblRSSFeedRowChangeEvent" msprop:Generator_RowEvHandlerName="tblRSSFeedRowChangeEventHandler" msprop:Generator_TableClassName="tblRSSFeedDataTable" msprop:Generator_TableVarName="tabletblRSSFeed" msprop:Generator_RowDeletingName="tblRSSFeedRowDeleting" msprop:Generator_TablePropName="_tblRSSFeed">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idRSSFeed" msprop:Generator_UserColumnName="idRSSFeed" msprop:Generator_ColumnPropNameInRow="idRSSFeed" msprop:Generator_ColumnVarNameInTable="columnidRSSFeed" msprop:Generator_ColumnPropNameInTable="idRSSFeedColumn" type="xs:int" />
+              <xs:element name="strRSSURL" msprop:Generator_UserColumnName="strRSSURL" msprop:Generator_ColumnPropNameInRow="strRSSURL" msprop:Generator_ColumnVarNameInTable="columnstrRSSURL" msprop:Generator_ColumnPropNameInTable="strRSSURLColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="strDescription" msprop:Generator_UserColumnName="strDescription" msprop:Generator_ColumnPropNameInRow="strDescription" msprop:Generator_ColumnVarNameInTable="columnstrDescription" msprop:Generator_ColumnPropNameInTable="strDescriptionColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="blnActive" msprop:Generator_UserColumnName="blnActive" msprop:Generator_ColumnPropNameInRow="blnActive" msprop:Generator_ColumnVarNameInTable="columnblnActive" msprop:Generator_ColumnPropNameInTable="blnActiveColumn" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tblRSSFeed" />
+      <xs:field xpath="mstns:idRSSFeed" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

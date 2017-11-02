@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="HomePage2_org_wikipedia_lab_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://wikipedia-lab.org:8080/WikipediaOntologyAPIv2/Service.asmx</Value>
+    </Setting>
+    <Setting Name="HomePage2_Dilbert2_Dilbert" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://gcomputer.net/webservices/dilbert.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,249 @@
+/* Default CSS Stylesheet for a new Web Application project */
+
+BODY
+{
+	background-color: #ffefd5;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: .8em;
+	font-weight: normal;
+	letter-spacing: normal;
+	text-transform: none;
+	word-spacing: normal;
+}
+
+H1, H2, H3, H4, H5, TH, THEAD, TFOOT
+{
+    COLOR: #003366;
+}
+H1	{	
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:	2em;
+	font-weight:	700;
+	font-style:	normal;
+	text-decoration:	none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	}	
+		
+H2	{	
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:	1.75em;
+	font-weight:	700;
+	font-style:	normal;
+	text-decoration:	none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	}	
+		
+H3	{	
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:	1.58em;
+	font-weight:	500;
+	font-style:	normal;
+	text-decoration:	none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	}	
+		
+H4	{	
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:	1.33em;
+	font-weight:	500;
+	text-decoration:	none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	}	
+		
+H5, DT	{	
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:	1em;
+	font-weight:	700;
+	font-style:	normal;
+	text-decoration:	none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	}	
+		
+H6	{	
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:	.8em;
+	font-weight:	700;
+	font-style:	normal;
+	text-decoration:	none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	}	
+		
+TFOOT, THEAD	{	
+	font-size:	1em;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	font-family: Arial, Helvetica, sans-serif;
+	}	
+		
+TH	{	
+	vertical-align:	baseline;
+	font-size:	1em;
+	font-weight:	bold;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	font-family: Arial, Helvetica, sans-serif;
+	}	
+
+
+A:link
+{
+	color: #3333cc;
+	font-family: Arial;
+	text-decoration: none;
+}	
+		
+A:visited	{	
+	text-decoration:	none;
+	font-family: Arial;
+	color:	#333399;
+	}	
+		
+A:active	{	
+	text-decoration:	none;
+	font-family: Arial;
+	color:	#333399;
+	}	
+		
+A:hover	{	
+	text-decoration:	underline;
+	font-family: Arial;
+	color:	#3333cc;
+	}
+	
+SMALL	{	
+	font-size:	.7em;
+	}	
+
+BIG	{	
+	font-size:	1.17em;
+	}	
+
+BLOCKQUOTE, PRE	{	
+	font-family:	Courier New, monospace;
+	}	
+	
+
+UL LI	{	
+	list-style-type:	square ;
+	}	
+
+UL LI LI	{	
+	list-style-type:	disc;
+	}	
+
+UL LI LI LI	{	
+	list-style-type:	circle;
+	}	
+	
+OL LI	{	
+	list-style-type:	decimal;
+	}	
+
+OL OL LI	{	
+	list-style-type:	lower-alpha;
+	}	
+
+OL OL OL LI	{	
+	list-style-type:	lower-roman;
+	}	
+
+IMG 	{
+	margin-top: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+	}
+.linkbutton
+{
+	font-size: 10pt;
+	font-family: Arial;
+}
+.AutoCompleteList
+{
+	background-color: #ffffe1;
+	border-right: #000099 1pt solid;
+	border-left: #000099 1pt solid;
+	width: 200px;
+	border-bottom: #000099 1pt solid;
+	text-align: left;
+	padding-right: 1px;
+	padding-left: 6px;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	overflow: hidden;
+	position: absolute;
+}
+.AutoCompleteListItem
+{
+	color: #00008b;
+	font-family: Verdana, Arial;
+	font-size: 12pt;
+}
+
+.AutoCompleteListHighlightedItem
+{
+	color: white;
+	font-family: Verdana, Arial;
+	font-size: 12pt;
+	background-color: #4169e1;
+}
+
+.InputBox
+{
+	border-right: #ccccff thin solid;
+	border-top: #808080 thin solid;
+	border-left: #808080 thin solid;
+	border-bottom: #ccccff thin solid;
+}
+
+.accordionHeader
+{
+	background-color: #ffdab9;
+	font-weight: bold;
+	font-size: 12pt;
+	font-family: Arial;
+	text-align: center;
+	border-right: #cc9966 1pt solid;
+	border-top: #cc9966 1pt solid;
+	border-left: #cc9966 1pt solid;
+	border-bottom: #cc9966 1pt solid;
+	color: silver;
+	cursor: hand;
+}
+
+.accordionHeaderSelected
+{
+	background-color: #ffa07a;
+	font-weight: bold;
+	font-size: 12pt;
+	font-family: Arial;
+	text-align: center;
+	border-right: #cc9966 1pt solid;
+	border-top: #cc9966 1pt solid;
+	border-left: #cc9966 1pt solid;
+	border-bottom: #cc9966 1pt solid;
+	cursor: hand;
+}
+.LinkInfoPanel
+{
+	margin: 2px;
+}
+.rtop, .rbottom{display:block}
+.rtop *, .rbottom *{display: block; height: 1px; overflow: hidden}
+.r1{margin: 0 5px}
+.r2{margin: 0 3px}
+.r3{margin: 0 2px}
+.r4{margin: 0 1px; height: 2px}

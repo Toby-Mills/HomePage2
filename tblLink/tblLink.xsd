@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="tblLink" targetNamespace="http://tempuri.org/tblLink.xsd" xmlns:mstns="http://tempuri.org/tblLink.xsd" xmlns="http://tempuri.org/tblLink.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="HomePageConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="HomePageConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.HomePageConnectionString.ConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="tblLink" msdata:IsDataSet="true" msdata:Locale="en-US" msprop:Generator_UserDSName="tblLink" msprop:Generator_DataSetName="tblLink">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblLink" msprop:Generator_UserTableName="tblLink" msprop:Generator_RowDeletedName="tblLinkRowDeleted" msprop:Generator_RowChangedName="tblLinkRowChanged" msprop:Generator_RowClassName="tblLinkRow" msprop:Generator_RowChangingName="tblLinkRowChanging" msprop:Generator_RowEvArgName="tblLinkRowChangeEvent" msprop:Generator_RowEvHandlerName="tblLinkRowChangeEventHandler" msprop:Generator_TableClassName="tblLinkDataTable" msprop:Generator_TableVarName="tabletblLink" msprop:Generator_RowDeletingName="tblLinkRowDeleting" msprop:Generator_TablePropName="_tblLink">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idLink" msprop:Generator_UserColumnName="idLink" msprop:Generator_ColumnVarNameInTable="columnidLink" msprop:Generator_ColumnPropNameInRow="idLink" msprop:Generator_ColumnPropNameInTable="idLinkColumn" type="xs:int" />
+              <xs:element name="strURL" msprop:Generator_UserColumnName="strURL" msprop:Generator_ColumnVarNameInTable="columnstrURL" msprop:Generator_ColumnPropNameInRow="strURL" msprop:Generator_ColumnPropNameInTable="strURLColumn" type="xs:string" />
+              <xs:element name="strDisplay" msprop:Generator_UserColumnName="strDisplay" msprop:Generator_ColumnVarNameInTable="columnstrDisplay" msprop:Generator_ColumnPropNameInRow="strDisplay" msprop:Generator_ColumnPropNameInTable="strDisplayColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="blnPinned" msprop:Generator_UserColumnName="blnPinned" msprop:Generator_ColumnVarNameInTable="columnblnPinned" msprop:Generator_ColumnPropNameInRow="blnPinned" msprop:Generator_ColumnPropNameInTable="blnPinnedColumn" type="xs:boolean" />
+              <xs:element name="intCountUsed" msprop:Generator_UserColumnName="intCountUsed" msprop:Generator_ColumnVarNameInTable="columnintCountUsed" msprop:Generator_ColumnPropNameInRow="intCountUsed" msprop:Generator_ColumnPropNameInTable="intCountUsedColumn" type="xs:int" />
+              <xs:element name="dteLastUsed" msprop:Generator_UserColumnName="dteLastUsed" msprop:Generator_ColumnVarNameInTable="columndteLastUsed" msprop:Generator_ColumnPropNameInRow="dteLastUsed" msprop:Generator_ColumnPropNameInTable="dteLastUsedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="strShortCut" msprop:Generator_UserColumnName="strShortCut" msprop:Generator_ColumnVarNameInTable="columnstrShortCut" msprop:Generator_ColumnPropNameInRow="strShortCut" msprop:Generator_ColumnPropNameInTable="strShortCutColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="tblLinkKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tblLink" />
+      <xs:field xpath="mstns:idLink" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

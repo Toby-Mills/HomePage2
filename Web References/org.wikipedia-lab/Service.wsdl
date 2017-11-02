@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetCandidatesFromKeyword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Keyword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCandidatesFromKeywordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCandidatesFromKeywordResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTopCandidateIDFromKeyword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Keyword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTopCandidateIDFromKeywordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetTopCandidateIDFromKeywordResult" type="s:unsignedInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCandidateFromID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:unsignedInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCandidateFromIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCandidateFromIDResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSynonym">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="iID" type="s:unsignedInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSynonymResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSynonymResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetThesaurusDS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="iType" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="iFrom" type="s:unsignedInt" />
+            <s:element minOccurs="1" maxOccurs="1" name="iOffset" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetThesaurusDSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetThesaurusDSResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetThesaurusDS4NetworkView">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="iFrom" type="s:unsignedInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetThesaurusDS4NetworkViewResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetThesaurusDS4NetworkViewResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetThesaurusDSFromTitles">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="iType" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sTitles" type="tns:ArrayOfString" />
+            <s:element minOccurs="1" maxOccurs="1" name="iOffset" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetThesaurusDSFromTitlesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetThesaurusDSFromTitlesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIDFromTitle">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sTitle" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIDFromTitleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetIDFromTitleResult" type="s:unsignedInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIDFromTitleWithConnect">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sTitle" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIDFromTitleWithConnectResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetIDFromTitleWithConnectResult" type="s:unsignedInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTagCandidates">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PatternHead" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTagCandidatesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTagCandidatesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTagCandidatesExperiment">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PatternHead" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="DisplayType" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="SearchType" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTagCandidatesExperimentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTagCandidatesExperimentResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetCandidatesFromKeywordSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCandidatesFromKeyword" />
+  </wsdl:message>
+  <wsdl:message name="GetCandidatesFromKeywordSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCandidatesFromKeywordResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTopCandidateIDFromKeywordSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTopCandidateIDFromKeyword" />
+  </wsdl:message>
+  <wsdl:message name="GetTopCandidateIDFromKeywordSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTopCandidateIDFromKeywordResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCandidateFromIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCandidateFromID" />
+  </wsdl:message>
+  <wsdl:message name="GetCandidateFromIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCandidateFromIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSynonymSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSynonym" />
+  </wsdl:message>
+  <wsdl:message name="GetSynonymSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSynonymResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetThesaurusDSSoapIn">
+    <wsdl:part name="parameters" element="tns:GetThesaurusDS" />
+  </wsdl:message>
+  <wsdl:message name="GetThesaurusDSSoapOut">
+    <wsdl:part name="parameters" element="tns:GetThesaurusDSResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetThesaurusDS4NetworkViewSoapIn">
+    <wsdl:part name="parameters" element="tns:GetThesaurusDS4NetworkView" />
+  </wsdl:message>
+  <wsdl:message name="GetThesaurusDS4NetworkViewSoapOut">
+    <wsdl:part name="parameters" element="tns:GetThesaurusDS4NetworkViewResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetThesaurusDSFromTitlesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetThesaurusDSFromTitles" />
+  </wsdl:message>
+  <wsdl:message name="GetThesaurusDSFromTitlesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetThesaurusDSFromTitlesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetIDFromTitleSoapIn">
+    <wsdl:part name="parameters" element="tns:GetIDFromTitle" />
+  </wsdl:message>
+  <wsdl:message name="GetIDFromTitleSoapOut">
+    <wsdl:part name="parameters" element="tns:GetIDFromTitleResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetIDFromTitleWithConnectSoapIn">
+    <wsdl:part name="parameters" element="tns:GetIDFromTitleWithConnect" />
+  </wsdl:message>
+  <wsdl:message name="GetIDFromTitleWithConnectSoapOut">
+    <wsdl:part name="parameters" element="tns:GetIDFromTitleWithConnectResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTagCandidatesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTagCandidates" />
+  </wsdl:message>
+  <wsdl:message name="GetTagCandidatesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTagCandidatesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTagCandidatesExperimentSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTagCandidatesExperiment" />
+  </wsdl:message>
+  <wsdl:message name="GetTagCandidatesExperimentSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTagCandidatesExperimentResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="GetCandidatesFromKeyword">
+      <wsdl:input message="tns:GetCandidatesFromKeywordSoapIn" />
+      <wsdl:output message="tns:GetCandidatesFromKeywordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTopCandidateIDFromKeyword">
+      <wsdl:input message="tns:GetTopCandidateIDFromKeywordSoapIn" />
+      <wsdl:output message="tns:GetTopCandidateIDFromKeywordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCandidateFromID">
+      <wsdl:input message="tns:GetCandidateFromIDSoapIn" />
+      <wsdl:output message="tns:GetCandidateFromIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSynonym">
+      <wsdl:input message="tns:GetSynonymSoapIn" />
+      <wsdl:output message="tns:GetSynonymSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetThesaurusDS">
+      <wsdl:input message="tns:GetThesaurusDSSoapIn" />
+      <wsdl:output message="tns:GetThesaurusDSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetThesaurusDS4NetworkView">
+      <wsdl:input message="tns:GetThesaurusDS4NetworkViewSoapIn" />
+      <wsdl:output message="tns:GetThesaurusDS4NetworkViewSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetThesaurusDSFromTitles">
+      <wsdl:input message="tns:GetThesaurusDSFromTitlesSoapIn" />
+      <wsdl:output message="tns:GetThesaurusDSFromTitlesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIDFromTitle">
+      <wsdl:input message="tns:GetIDFromTitleSoapIn" />
+      <wsdl:output message="tns:GetIDFromTitleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIDFromTitleWithConnect">
+      <wsdl:input message="tns:GetIDFromTitleWithConnectSoapIn" />
+      <wsdl:output message="tns:GetIDFromTitleWithConnectSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTagCandidates">
+      <wsdl:input message="tns:GetTagCandidatesSoapIn" />
+      <wsdl:output message="tns:GetTagCandidatesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTagCandidatesExperiment">
+      <wsdl:input message="tns:GetTagCandidatesExperimentSoapIn" />
+      <wsdl:output message="tns:GetTagCandidatesExperimentSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetCandidatesFromKeyword">
+      <soap:operation soapAction="http://tempuri.org/GetCandidatesFromKeyword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTopCandidateIDFromKeyword">
+      <soap:operation soapAction="http://tempuri.org/GetTopCandidateIDFromKeyword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCandidateFromID">
+      <soap:operation soapAction="http://tempuri.org/GetCandidateFromID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSynonym">
+      <soap:operation soapAction="http://tempuri.org/GetSynonym" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetThesaurusDS">
+      <soap:operation soapAction="http://tempuri.org/GetThesaurusDS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetThesaurusDS4NetworkView">
+      <soap:operation soapAction="http://tempuri.org/GetThesaurusDS4NetworkView" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetThesaurusDSFromTitles">
+      <soap:operation soapAction="http://tempuri.org/GetThesaurusDSFromTitles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIDFromTitle">
+      <soap:operation soapAction="http://tempuri.org/GetIDFromTitle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIDFromTitleWithConnect">
+      <soap:operation soapAction="http://tempuri.org/GetIDFromTitleWithConnect" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTagCandidates">
+      <soap:operation soapAction="http://tempuri.org/GetTagCandidates" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTagCandidatesExperiment">
+      <soap:operation soapAction="http://tempuri.org/GetTagCandidatesExperiment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetCandidatesFromKeyword">
+      <soap12:operation soapAction="http://tempuri.org/GetCandidatesFromKeyword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTopCandidateIDFromKeyword">
+      <soap12:operation soapAction="http://tempuri.org/GetTopCandidateIDFromKeyword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCandidateFromID">
+      <soap12:operation soapAction="http://tempuri.org/GetCandidateFromID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSynonym">
+      <soap12:operation soapAction="http://tempuri.org/GetSynonym" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetThesaurusDS">
+      <soap12:operation soapAction="http://tempuri.org/GetThesaurusDS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetThesaurusDS4NetworkView">
+      <soap12:operation soapAction="http://tempuri.org/GetThesaurusDS4NetworkView" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetThesaurusDSFromTitles">
+      <soap12:operation soapAction="http://tempuri.org/GetThesaurusDSFromTitles" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIDFromTitle">
+      <soap12:operation soapAction="http://tempuri.org/GetIDFromTitle" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIDFromTitleWithConnect">
+      <soap12:operation soapAction="http://tempuri.org/GetIDFromTitleWithConnect" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTagCandidates">
+      <soap12:operation soapAction="http://tempuri.org/GetTagCandidates" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTagCandidatesExperiment">
+      <soap12:operation soapAction="http://tempuri.org/GetTagCandidatesExperiment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="http://wikipedia-lab.org:8080/WikipediaOntologyAPIv2/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="http://wikipedia-lab.org:8080/WikipediaOntologyAPIv2/Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

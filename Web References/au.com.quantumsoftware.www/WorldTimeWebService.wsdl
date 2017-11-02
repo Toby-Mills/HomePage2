@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://www.quantumsoftware.com.au/WorldTimeWebService/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://www.quantumsoftware.com.au/WorldTimeWebService/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.quantumsoftware.com.au/WorldTimeWebService/">
+      <s:element name="GetTimeZones">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetTimeZonesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTimeZonesResult" type="tns:ArrayOfTimeZoneInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfTimeZoneInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TimeZoneInfo" nillable="true" type="tns:TimeZoneInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TimeZoneInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DaylightName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StandardName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DisplayName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="UtcOffsetTicks" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="CurrentTimeTicks" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsInDaylightSaving" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetTimeZoneInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="timeZoneName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTimeZoneInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTimeZoneInfoResult" type="tns:TimeZoneInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ArrayOfTimeZoneInfo" nillable="true" type="tns:ArrayOfTimeZoneInfo" />
+      <s:element name="TimeZoneInfo" nillable="true" type="tns:TimeZoneInfo" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetTimeZonesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTimeZones" />
+  </wsdl:message>
+  <wsdl:message name="GetTimeZonesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTimeZonesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTimeZoneInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTimeZoneInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetTimeZoneInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTimeZoneInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTimeZonesHttpGetIn" />
+  <wsdl:message name="GetTimeZonesHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfTimeZoneInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetTimeZoneInfoHttpGetIn">
+    <wsdl:part name="timeZoneName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetTimeZoneInfoHttpGetOut">
+    <wsdl:part name="Body" element="tns:TimeZoneInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetTimeZonesHttpPostIn" />
+  <wsdl:message name="GetTimeZonesHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfTimeZoneInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetTimeZoneInfoHttpPostIn">
+    <wsdl:part name="timeZoneName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetTimeZoneInfoHttpPostOut">
+    <wsdl:part name="Body" element="tns:TimeZoneInfo" />
+  </wsdl:message>
+  <wsdl:portType name="WorldTimeWebServiceSoap">
+    <wsdl:operation name="GetTimeZones">
+      <wsdl:input message="tns:GetTimeZonesSoapIn" />
+      <wsdl:output message="tns:GetTimeZonesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTimeZoneInfo">
+      <wsdl:input message="tns:GetTimeZoneInfoSoapIn" />
+      <wsdl:output message="tns:GetTimeZoneInfoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="WorldTimeWebServiceHttpGet">
+    <wsdl:operation name="GetTimeZones">
+      <wsdl:input message="tns:GetTimeZonesHttpGetIn" />
+      <wsdl:output message="tns:GetTimeZonesHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTimeZoneInfo">
+      <wsdl:input message="tns:GetTimeZoneInfoHttpGetIn" />
+      <wsdl:output message="tns:GetTimeZoneInfoHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="WorldTimeWebServiceHttpPost">
+    <wsdl:operation name="GetTimeZones">
+      <wsdl:input message="tns:GetTimeZonesHttpPostIn" />
+      <wsdl:output message="tns:GetTimeZonesHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTimeZoneInfo">
+      <wsdl:input message="tns:GetTimeZoneInfoHttpPostIn" />
+      <wsdl:output message="tns:GetTimeZoneInfoHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WorldTimeWebServiceSoap" type="tns:WorldTimeWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetTimeZones">
+      <soap:operation soapAction="http://www.quantumsoftware.com.au/WorldTimeWebService/GetTimeZones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTimeZoneInfo">
+      <soap:operation soapAction="http://www.quantumsoftware.com.au/WorldTimeWebService/GetTimeZoneInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WorldTimeWebServiceSoap12" type="tns:WorldTimeWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+    <wsdl:operation name="GetTimeZones">
+      <soap12:operation soapAction="http://www.quantumsoftware.com.au/WorldTimeWebService/GetTimeZones" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <wsdl:input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTimeZoneInfo">
+      <soap12:operation soapAction="http://www.quantumsoftware.com.au/WorldTimeWebService/GetTimeZoneInfo" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <wsdl:input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WorldTimeWebServiceHttpGet" type="tns:WorldTimeWebServiceHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="GetTimeZones">
+      <http:operation location="/GetTimeZones" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTimeZoneInfo">
+      <http:operation location="/GetTimeZoneInfo" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WorldTimeWebServiceHttpPost" type="tns:WorldTimeWebServiceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="GetTimeZones">
+      <http:operation location="/GetTimeZones" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTimeZoneInfo">
+      <http:operation location="/GetTimeZoneInfo" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WorldTimeWebService">
+    <wsdl:port name="WorldTimeWebServiceSoap" binding="tns:WorldTimeWebServiceSoap">
+      <soap:address location="http://www.quantumsoftware.com.au/WorldTimeWebService/WorldTimeWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WorldTimeWebServiceSoap12" binding="tns:WorldTimeWebServiceSoap12">
+      <soap12:address location="http://www.quantumsoftware.com.au/WorldTimeWebService/WorldTimeWebService.asmx" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+    </wsdl:port>
+    <wsdl:port name="WorldTimeWebServiceHttpGet" binding="tns:WorldTimeWebServiceHttpGet">
+      <http:address location="http://www.quantumsoftware.com.au/WorldTimeWebService/WorldTimeWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WorldTimeWebServiceHttpPost" binding="tns:WorldTimeWebServiceHttpPost">
+      <http:address location="http://www.quantumsoftware.com.au/WorldTimeWebService/WorldTimeWebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

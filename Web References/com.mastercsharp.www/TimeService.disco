@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://www.mastercsharp.com/live/TimeService/TimeService.asmx?wsdl" docRef="http://www.mastercsharp.com/live/TimeService/TimeService.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://www.mastercsharp.com/live/TimeService/TimeService.asmx" xmlns:q1="MasterCSharp.WebServices" binding="q1:World_x005F_x0020_Time_x005F_x0020_ServiceSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://www.mastercsharp.com/live/TimeService/TimeService.asmx" xmlns:q2="MasterCSharp.WebServices" binding="q2:World_x005F_x0020_Time_x005F_x0020_ServiceSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

@@ -1,0 +1,1690 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+HomePage2
+</name>
+</assembly>
+<members>
+<member name="F:HomePage2.LinkList.grdLink">
+	<summary>
+grdLink control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HomePage2.LinkList.Accordion1">
+	<summary>
+Accordion1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="T:HomePage2.LinkList">
+	<summary>
+LinkList class.
+</summary>
+	<remarks>
+Auto-generated class.
+</remarks>
+</member><member name="F:HomePage2.RSSDisplay.btnRefreshNews">
+	<summary>
+btnRefreshNews control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HomePage2.RSSDisplay.btnSource">
+	<summary>
+btnSource control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HomePage2.RSSDisplay.lstRSS">
+	<summary>
+lstRSS control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HomePage2.RSSDisplay.xmlSourceRSS">
+	<summary>
+xmlSourceRSS control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HomePage2.RSSDisplay.pnlRSSFeedEditor">
+	<summary>
+pnlRSSFeedEditor control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HomePage2.RSSDisplay.TblRSSFeed_Editor1">
+	<summary>
+TblRSSFeed_Editor1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="T:HomePage2.RSSDisplay">
+	<summary>
+RSSDisplay class.
+</summary>
+	<remarks>
+Auto-generated class.
+</remarks>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.#ctor">
+	<remarks/>
+</member><member name="E:HomePage2.org.wikipedia_lab.Service.GetCandidatesFromKeywordCompleted">
+	<remarks/>
+</member><member name="E:HomePage2.org.wikipedia_lab.Service.GetTopCandidateIDFromKeywordCompleted">
+	<remarks/>
+</member><member name="E:HomePage2.org.wikipedia_lab.Service.GetCandidateFromIDCompleted">
+	<remarks/>
+</member><member name="E:HomePage2.org.wikipedia_lab.Service.GetSynonymCompleted">
+	<remarks/>
+</member><member name="E:HomePage2.org.wikipedia_lab.Service.GetThesaurusDSCompleted">
+	<remarks/>
+</member><member name="E:HomePage2.org.wikipedia_lab.Service.GetThesaurusDS4NetworkViewCompleted">
+	<remarks/>
+</member><member name="E:HomePage2.org.wikipedia_lab.Service.GetThesaurusDSFromTitlesCompleted">
+	<remarks/>
+</member><member name="E:HomePage2.org.wikipedia_lab.Service.GetIDFromTitleCompleted">
+	<remarks/>
+</member><member name="E:HomePage2.org.wikipedia_lab.Service.GetIDFromTitleWithConnectCompleted">
+	<remarks/>
+</member><member name="E:HomePage2.org.wikipedia_lab.Service.GetTagCandidatesCompleted">
+	<remarks/>
+</member><member name="E:HomePage2.org.wikipedia_lab.Service.GetTagCandidatesExperimentCompleted">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.GetCandidatesFromKeyword(System.String)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.BeginGetCandidatesFromKeyword(System.String,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.EndGetCandidatesFromKeyword(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.GetCandidatesFromKeywordAsync(System.String)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.GetCandidatesFromKeywordAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.GetTopCandidateIDFromKeyword(System.String)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.BeginGetTopCandidateIDFromKeyword(System.String,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.EndGetTopCandidateIDFromKeyword(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.GetTopCandidateIDFromKeywordAsync(System.String)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.GetTopCandidateIDFromKeywordAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.GetCandidateFromID(System.UInt32)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.BeginGetCandidateFromID(System.UInt32,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.EndGetCandidateFromID(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.GetCandidateFromIDAsync(System.UInt32)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.GetCandidateFromIDAsync(System.UInt32,System.Object)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.GetSynonym(System.UInt32)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.BeginGetSynonym(System.UInt32,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.EndGetSynonym(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.GetSynonymAsync(System.UInt32)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.GetSynonymAsync(System.UInt32,System.Object)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.GetThesaurusDS(System.Int32,System.UInt32,System.Int32)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.BeginGetThesaurusDS(System.Int32,System.UInt32,System.Int32,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.EndGetThesaurusDS(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.GetThesaurusDSAsync(System.Int32,System.UInt32,System.Int32)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.GetThesaurusDSAsync(System.Int32,System.UInt32,System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.GetThesaurusDS4NetworkView(System.UInt32)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.BeginGetThesaurusDS4NetworkView(System.UInt32,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.EndGetThesaurusDS4NetworkView(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.GetThesaurusDS4NetworkViewAsync(System.UInt32)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.GetThesaurusDS4NetworkViewAsync(System.UInt32,System.Object)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.GetThesaurusDSFromTitles(System.Int32,System.String[],System.Int32)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.BeginGetThesaurusDSFromTitles(System.Int32,System.String[],System.Int32,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.EndGetThesaurusDSFromTitles(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.GetThesaurusDSFromTitlesAsync(System.Int32,System.String[],System.Int32)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.GetThesaurusDSFromTitlesAsync(System.Int32,System.String[],System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.GetIDFromTitle(System.String)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.BeginGetIDFromTitle(System.String,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.EndGetIDFromTitle(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.GetIDFromTitleAsync(System.String)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.GetIDFromTitleAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.GetIDFromTitleWithConnect(System.String)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.BeginGetIDFromTitleWithConnect(System.String,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.EndGetIDFromTitleWithConnect(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.GetIDFromTitleWithConnectAsync(System.String)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.GetIDFromTitleWithConnectAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.GetTagCandidates(System.String)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.BeginGetTagCandidates(System.String,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.EndGetTagCandidates(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.GetTagCandidatesAsync(System.String)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.GetTagCandidatesAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.GetTagCandidatesExperiment(System.String,System.Int32,System.Int32)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.BeginGetTagCandidatesExperiment(System.String,System.Int32,System.Int32,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.EndGetTagCandidatesExperiment(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.GetTagCandidatesExperimentAsync(System.String,System.Int32,System.Int32)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.GetTagCandidatesExperimentAsync(System.String,System.Int32,System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:HomePage2.org.wikipedia_lab.Service.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:HomePage2.org.wikipedia_lab.Service">
+	<remarks/>
+</member><member name="T:HomePage2.org.wikipedia_lab.GetCandidatesFromKeywordCompletedEventHandler">
+	<remarks/>
+</member><member name="P:HomePage2.org.wikipedia_lab.GetCandidatesFromKeywordCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:HomePage2.org.wikipedia_lab.GetCandidatesFromKeywordCompletedEventArgs">
+	<remarks/>
+</member><member name="T:HomePage2.org.wikipedia_lab.GetTopCandidateIDFromKeywordCompletedEventHandler">
+	<remarks/>
+</member><member name="P:HomePage2.org.wikipedia_lab.GetTopCandidateIDFromKeywordCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:HomePage2.org.wikipedia_lab.GetTopCandidateIDFromKeywordCompletedEventArgs">
+	<remarks/>
+</member><member name="T:HomePage2.org.wikipedia_lab.GetCandidateFromIDCompletedEventHandler">
+	<remarks/>
+</member><member name="P:HomePage2.org.wikipedia_lab.GetCandidateFromIDCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:HomePage2.org.wikipedia_lab.GetCandidateFromIDCompletedEventArgs">
+	<remarks/>
+</member><member name="T:HomePage2.org.wikipedia_lab.GetSynonymCompletedEventHandler">
+	<remarks/>
+</member><member name="P:HomePage2.org.wikipedia_lab.GetSynonymCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:HomePage2.org.wikipedia_lab.GetSynonymCompletedEventArgs">
+	<remarks/>
+</member><member name="T:HomePage2.org.wikipedia_lab.GetThesaurusDSCompletedEventHandler">
+	<remarks/>
+</member><member name="P:HomePage2.org.wikipedia_lab.GetThesaurusDSCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:HomePage2.org.wikipedia_lab.GetThesaurusDSCompletedEventArgs">
+	<remarks/>
+</member><member name="T:HomePage2.org.wikipedia_lab.GetThesaurusDS4NetworkViewCompletedEventHandler">
+	<remarks/>
+</member><member name="P:HomePage2.org.wikipedia_lab.GetThesaurusDS4NetworkViewCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:HomePage2.org.wikipedia_lab.GetThesaurusDS4NetworkViewCompletedEventArgs">
+	<remarks/>
+</member><member name="T:HomePage2.org.wikipedia_lab.GetThesaurusDSFromTitlesCompletedEventHandler">
+	<remarks/>
+</member><member name="P:HomePage2.org.wikipedia_lab.GetThesaurusDSFromTitlesCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:HomePage2.org.wikipedia_lab.GetThesaurusDSFromTitlesCompletedEventArgs">
+	<remarks/>
+</member><member name="T:HomePage2.org.wikipedia_lab.GetIDFromTitleCompletedEventHandler">
+	<remarks/>
+</member><member name="P:HomePage2.org.wikipedia_lab.GetIDFromTitleCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:HomePage2.org.wikipedia_lab.GetIDFromTitleCompletedEventArgs">
+	<remarks/>
+</member><member name="T:HomePage2.org.wikipedia_lab.GetIDFromTitleWithConnectCompletedEventHandler">
+	<remarks/>
+</member><member name="P:HomePage2.org.wikipedia_lab.GetIDFromTitleWithConnectCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:HomePage2.org.wikipedia_lab.GetIDFromTitleWithConnectCompletedEventArgs">
+	<remarks/>
+</member><member name="T:HomePage2.org.wikipedia_lab.GetTagCandidatesCompletedEventHandler">
+	<remarks/>
+</member><member name="P:HomePage2.org.wikipedia_lab.GetTagCandidatesCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:HomePage2.org.wikipedia_lab.GetTagCandidatesCompletedEventArgs">
+	<remarks/>
+</member><member name="T:HomePage2.org.wikipedia_lab.GetTagCandidatesExperimentCompletedEventHandler">
+	<remarks/>
+</member><member name="P:HomePage2.org.wikipedia_lab.GetTagCandidatesExperimentCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:HomePage2.org.wikipedia_lab.GetTagCandidatesExperimentCompletedEventArgs">
+	<remarks/>
+</member><member name="M:HomePage2.Dilbert.Dilbert.#ctor">
+	<remarks/>
+</member><member name="E:HomePage2.Dilbert.Dilbert.TodaysDilbertCompleted">
+	<remarks/>
+</member><member name="E:HomePage2.Dilbert.Dilbert.DailyDilbertCompleted">
+	<remarks/>
+</member><member name="M:HomePage2.Dilbert.Dilbert.TodaysDilbert">
+	<remarks/>
+</member><member name="M:HomePage2.Dilbert.Dilbert.BeginTodaysDilbert(System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:HomePage2.Dilbert.Dilbert.EndTodaysDilbert(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:HomePage2.Dilbert.Dilbert.TodaysDilbertAsync">
+	<remarks/>
+</member><member name="M:HomePage2.Dilbert.Dilbert.TodaysDilbertAsync(System.Object)">
+	<remarks/>
+</member><member name="M:HomePage2.Dilbert.Dilbert.DailyDilbert(System.DateTime)">
+	<remarks/>
+</member><member name="M:HomePage2.Dilbert.Dilbert.BeginDailyDilbert(System.DateTime,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:HomePage2.Dilbert.Dilbert.EndDailyDilbert(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:HomePage2.Dilbert.Dilbert.DailyDilbertAsync(System.DateTime)">
+	<remarks/>
+</member><member name="M:HomePage2.Dilbert.Dilbert.DailyDilbertAsync(System.DateTime,System.Object)">
+	<remarks/>
+</member><member name="M:HomePage2.Dilbert.Dilbert.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:HomePage2.Dilbert.Dilbert">
+	<remarks/>
+</member><member name="T:HomePage2.Dilbert.TodaysDilbertCompletedEventHandler">
+	<remarks/>
+</member><member name="P:HomePage2.Dilbert.TodaysDilbertCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:HomePage2.Dilbert.TodaysDilbertCompletedEventArgs">
+	<remarks/>
+</member><member name="T:HomePage2.Dilbert.DailyDilbertCompletedEventHandler">
+	<remarks/>
+</member><member name="P:HomePage2.Dilbert.DailyDilbertCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:HomePage2.Dilbert.DailyDilbertCompletedEventArgs">
+	<remarks/>
+</member><member name="F:HomePage2.WebForm1.Form1">
+	<summary>
+Form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HomePage2.WebForm1.ScriptManagerHome">
+	<summary>
+ScriptManagerHome control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HomePage2.WebForm1.lblHome">
+	<summary>
+lblHome control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HomePage2.WebForm1.UpdatePanel1">
+	<summary>
+UpdatePanel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HomePage2.WebForm1.Label2">
+	<summary>
+Label2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HomePage2.WebForm1.lblCapeTownTime">
+	<summary>
+lblCapeTownTime control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HomePage2.WebForm1.txtInput">
+	<summary>
+txtInput control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HomePage2.WebForm1.btnGo">
+	<summary>
+btnGo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HomePage2.WebForm1.ImageButton1">
+	<summary>
+ImageButton1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HomePage2.WebForm1.lnkSearch">
+	<summary>
+lnkSearch control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HomePage2.WebForm1.lnkDefine">
+	<summary>
+lnkDefine control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HomePage2.WebForm1.lnkGroups">
+	<summary>
+lnkGroups control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HomePage2.WebForm1.lnkDictionary">
+	<summary>
+lnkDictionary control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HomePage2.WebForm1.btnImages">
+	<summary>
+btnImages control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HomePage2.WebForm1.btnWikipedia">
+	<summary>
+btnWikipedia control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HomePage2.WebForm1.btnFogBugz">
+	<summary>
+btnFogBugz control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HomePage2.WebForm1.udpPinnedLinks">
+	<summary>
+udpPinnedLinks control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HomePage2.WebForm1.Accordion1">
+	<summary>
+Accordion1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HomePage2.WebForm1.AccordionPanePinned">
+	<summary>
+AccordionPanePinned control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HomePage2.WebForm1.AccordionPaneUnpinned">
+	<summary>
+AccordionPaneUnpinned control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HomePage2.WebForm1.btnAllUnpinned">
+	<summary>
+btnAllUnpinned control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HomePage2.WebForm1.Label1">
+	<summary>
+Label1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HomePage2.WebForm1.udprogRSS">
+	<summary>
+udprogRSS control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HomePage2.WebForm1.udpNews">
+	<summary>
+udpNews control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HomePage2.WebForm1.RSSDisplay1">
+	<summary>
+RSSDisplay1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HomePage2.WebForm1.btnEnter">
+	<summary>
+btnEnter control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HomePage2.WebForm1.AutoCompleteExtender1">
+	<summary>
+AutoCompleteExtender1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HomePage2.WebForm1.AnimationExtender1">
+	<summary>
+AnimationExtender1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="T:HomePage2.WebForm1">
+	<summary>
+WebForm1 class.
+</summary>
+	<remarks>
+Auto-generated class.
+</remarks>
+</member><member name="F:HomePage2.modDBFunctions.strConnectionString">
+	<summary>
+ A string valriable that stores the Oledb connection string
+ </summary>
+</member><member name="F:HomePage2.modDBFunctions.NULL_NUMBER">
+	<summary>
+ A Constant storing a null number value to be -9999
+ </summary>
+</member><member name="T:HomePage2.modDBFunctions.OleDBConnectionProvider">
+	<summary>
+ An enum storing the Oledb connection providers being catered for.
+ </summary>
+</member><member name="M:HomePage2.modDBFunctions.OpenDBConnection(System.Data.OleDb.OleDbConnection@)">
+	<summary>
+ This function opens a specified DB connection
+ </summary>
+	<param name="conDB">
+ An oledb connection obejct
+ </param>
+	<returns>
+ A true/false value indicating whether the oledb connection has been successfully opened.
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.OpenDBConnection(System.Data.OleDb.OleDbConnection@,System.String)">
+	<summary>
+ This function opens a specified DB connection
+ </summary>
+	<param name="conDB">
+ An oledb connection object
+ </param>
+	<param name="strContextInfo">
+ An oledb connection parametre giving the DB context info for the connection
+ </param>
+	<returns>
+ A true/false value indicating whether the oledb connection has been successfully opened.
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.ExecuteSQL(System.Data.OleDb.OleDbConnection@,System.String)">
+	<summary>
+ This function executes a specified SQL Statement
+ </summary>
+	<param name="conDB">
+ An oledb connection object
+ </param>
+	<param name="strSQL">
+ The SQL Statement to be executed
+ </param>
+	<returns>
+ Number of rows affected by the query execution
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.ExecuteSQL(System.Data.OleDb.OleDbConnection@,System.String,System.String)">
+	<summary>
+ This function executes a specified SQL Statement
+ </summary>
+	<param name="conDB">
+ An oledb connection object
+ </param>
+	<param name="strSQL">
+ The SQL Statement to be executed
+ </param>
+	<param name="strContextInfo">
+ Used to get the context in which a specific user carried out certain actions
+ </param>
+	<returns>
+ Number of rows affected by the query execution
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.ExecuteSQL(System.Data.OleDb.OleDbConnection@,System.String,System.Data.OleDb.OleDbTransaction)">
+	<summary>
+ This function executes a specified SQL Statement
+ </summary>
+	<param name="conDB">
+ An oledb connection object
+ </param>
+	<param name="strSQL">
+ The SQL Statement to be executed
+ </param>
+	<param name="trans">
+	</param>
+	<returns>
+ Number of rows affected by the query execution
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.GetDataReader(System.Data.OleDb.OleDbConnection@,System.String)">
+	<summary>
+ This function executes a specified SQL Statement and returns a datareader
+ </summary>
+	<param name="conDB">
+ An oledb connection object
+ </param>
+	<param name="strSQL">
+ The SQL Statement to be executed
+ </param>
+	<returns>
+ A datareader from the executed sql statement
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.GetDataSet(System.Data.OleDb.OleDbConnection@,System.String,System.String)">
+	<summary>
+ This function executes a specified SQL Statement and returns a dataset
+ </summary>
+	<param name="conDB">
+ An oledb connection object
+ </param>
+	<param name="strSQL">
+ The SQL Statement to be executed
+ </param>
+	<param name="strTableName">
+  The name of the source table to use for table mapping. 
+ </param>
+	<returns>
+ A dataset from the executed sql statement
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.GetDataTable(System.Data.OleDb.OleDbConnection@,System.String)">
+	<summary>
+ This function executes a specified SQL Statement and returns a datatable
+ </summary>
+	<param name="conDB">
+ An oledb connection object
+ </param>
+	<param name="strSQL">
+ The SQL Statement to be executed
+ </param>
+	<returns>
+ A datatable from the executed sql statement
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.GetLastRecord(System.Data.OleDb.OleDbConnection@,System.String,System.String)">
+	<summary>
+ This function returns the last integer ID in a table from the DB
+ </summary>
+	<param name="conDB">
+ An oledb connection object
+ </param>
+	<param name="strTable">
+ The table in the DB from which to retrieve the last ID value
+ </param>
+	<param name="strIDField">
+ The column name in the table which contains the ID fields
+ </param>
+	<returns>
+ An integer value which is the last ID value
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.GetFirstRecord(System.Data.OleDb.OleDbConnection@,System.String,System.String)">
+	<summary>
+ This function returns the first integer ID in a table from the DB
+ </summary>
+	<param name="conDB">
+ An oledb connection object
+ </param>
+	<param name="strTable">
+ The table in the DB from which to retrieve the first ID value
+ </param>
+	<param name="strIDField">
+ The column name in the table which contains the ID fields
+ </param>
+	<returns>
+ An integer value which is the first ID value
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.FindDataRow(System.Data.OleDb.OleDbConnection@,System.String,System.String,System.Data.DataTable,System.Boolean)">
+	<summary>
+ The function Searches for a value in the specified column in the datatable
+ This is the original version of this function.
+ This version is left for backward compatibility
+ </summary>
+	<param name="conDB">
+ An oledb connection object
+ </param>
+	<param name="strSearchValue">
+ The value to search for the DB
+ </param>
+	<param name="strSearchField">
+ The Column name in which the value is to be searched
+ </param>
+	<param name="objDataTable">
+ The datatable in which to search for the values specified.
+ </param>
+	<param name="blnTrim">
+ A true/false value indicating whether the passes in value needs to be trimmed or not.
+ </param>
+	<returns>
+ A datarow that contains the value being searched.
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.FindDataRow(System.String,System.String,System.Data.DataTable,System.Boolean)">
+	<summary>
+ The function Searches for a value in the specified column in the datatable
+ This overload corrects the problem with the original function (above):
+ This version is left for backward compatibility
+ </summary>
+	<param name="strSearchValue">
+ The value to search for the DB
+ </param>
+	<param name="strSearchField">
+ The Column name in which the value is to be searched
+ </param>
+	<param name="objDataTable">
+ The datatable in which to search for the values specified.
+ </param>
+	<param name="blnTrim">
+ A true/false value indicating whether the passes in value needs to be trimmed or not.
+ </param>
+	<returns>
+ A datarow that contains the value being searched.
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.DeleteDataRows(System.Data.OleDb.OleDbConnection@,System.String,System.String,System.String,System.Boolean)">
+	<summary>
+     Deletes rows from the database table. Constructs the SQL from parameters. Id field can be string or integer.
+     Will delete all rows with specified criteria so needs to be used with caution.
+ </summary>
+	<param name="strTableName" type="String">
+		<para>
+         A valid table name for the data source
+     </para>
+	</param>
+	<param name="strIdField" type="String">
+		<para>
+         A fieldname for specifying the criteria
+     </para>
+	</param>
+	<param name="strIdValue" type="String">
+		<para>
+         the value of the specified field
+     </para>
+	</param>
+	<param name="blAsInteger" type="Boolean">
+		<para>
+         indicates if the specified field is numeric or integer for building the sql string
+     </para>
+	</param>
+	<returns>
+     An integer value specifying the number of records deleted
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.DeleteDataRows(System.Data.OleDb.OleDbConnection@,System.String,System.String,System.String,System.Boolean,System.String)">
+	<summary>
+ Uses the function above to create a sql statement from the passed values and executes the SQL Statement.
+ Delete all records in a table meeting the criteria
+ </summary>
+	<param name="conDB" type="OleDbConnection">
+ An oledb connection object
+ </param>
+	<param name="strTableName" type="String">
+ The table name from which to delete the row.
+ </param>
+	<param name="strIdField" type="String">
+ The name of the ID column in the table
+ </param>
+	<param name="blAsInteger" type="Boolean">
+ True/false value indicating whether the ID is an integer or not
+ </param>
+	<param name="strIdValue" type="String">
+ The value of the Id of which the row to delete.
+ </param>
+	<param name="strContextInfo" type="String">
+ Used to get the context in which a specific user carried out certain actions
+ </param>
+	<returns>
+	</returns>
+</member><member name="M:HomePage2.modDBFunctions.DeleteDataRows(System.Data.OleDb.OleDbConnection@,System.String,System.String,System.Int32)">
+	<summary>
+ Creates a SQL Statement from parametres passed and executes the statement
+ Delete all records in a table meeting the criteria
+ </summary>
+	<param name="conDB" type="OleDbConnection">
+ An oledb connection object
+ </param>
+	<param name="strTableName" type="String">
+ The table name from which to delete the row.
+ </param>
+	<param name="strIdField" type="String">
+ The name of the ID column in the table
+ </param>
+	<param name="intIDValue" type="Integer">
+ The value of the Id of which the row to delete.
+ </param>
+	<returns>
+ An integer value of the number of rows affected by the execution.
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.DeleteDataRows(System.Data.OleDb.OleDbConnection@,System.String,System.String,System.Int32,System.String)">
+	<summary>
+ Creates a SQL Statement from parametres passed and executes the statement
+ Delete all records in a table meeting the criteria
+ </summary>
+	<param name="conDB" type="OleDbConnection">
+ An oledb connection object
+ </param>
+	<param name="strTableName" type="String">
+ The table name from which to delete the row.
+ </param>
+	<param name="strIdField" type="String">
+ The name of the ID column in the table
+ </param>
+	<param name="intIDValue" type="Integer">
+ The value of the Id of which the row to delete.
+ </param>
+	<param name="strContextInfo" type="String">
+ Used to get the context in which a specific user carried out certain actions
+ </param>
+</member><member name="M:HomePage2.modDBFunctions.DeleteDataRows(System.Data.OleDb.OleDbConnection@,System.String,System.String,System.Guid)">
+	<summary>
+ Creates a SQL Statement from parametres passed and executes the statement
+ Delete all records in a table meeting the criteria
+ </summary>
+	<param name="conDB" type="OleDbConnection">
+ An oledb connection object
+ </param>
+	<param name="strTableName" type="String">
+ The table name from which to delete the row.
+ </param>
+	<param name="strIdField" type="String">
+ The name of the ID column in the table
+ </param>
+	<param name="guidValue" type="Guid">
+ The value of the Id of which the row to delete.
+ </param>
+	<returns>
+ An integer value of the number of rows affected by the execution.
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.DeleteDataRows(System.Data.OleDb.OleDbConnection@,System.String,System.String,System.Guid,System.String)">
+	<summary>
+ Creates a SQL Statement from parametres passed and executes the statement
+ Delete all records in a table meeting the criteria
+ </summary>
+	<param name="conDB" type="OleDbConnection">
+ An oledb connection object
+ </param>
+	<param name="strTableName" type="String">
+ The table name from which to delete the row.
+ </param>
+	<param name="strIdField" type="String">
+ The name of the ID column in the table
+ </param>
+	<param name="guidValue" type="Guid">
+ The value of the Id of which the row to delete.
+ </param>
+	<param name="strContextInfo" type="String">
+ Used to get the context in which a specific user carried out certain actions
+ </param>
+	<returns>
+ An integer value of the number of rows affected by the execution.
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.DeleteDataRows(System.Data.OleDb.OleDbConnection@,System.String)">
+	<summary>
+ Creates a SQL Statement from parametres passed and executes the statement
+ Delete all records in a table meeting the criteria
+ </summary>
+	<param name="conDB" type="OleDbConnection">
+ An oledb connection object
+ </param>
+	<param name="strTableName" type="String">
+ The table name from which to delete the row.
+ </param>
+	<returns>
+ An integer value of the number of rows affected by the execution.
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.DeleteDataRows(System.Data.OleDb.OleDbConnection@,System.String,System.String)">
+	<summary>
+ Creates a SQL Statement from parametres passed and executes the statement
+ Delete all records in a table meeting the criteria
+ </summary>
+	<param name="conDB" type="OleDbConnection">
+ An oledb connection object
+ </param>
+	<param name="strTableName" type="String">
+ The table name from which to delete the row.
+ </param>
+	<param name="strContextInfo" type="String">
+ Used to get the context in which a specific user carried out certain actions
+ </param>
+	<returns>
+ An integer value of the number of rows affected by the execution.
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.DeleteDataRows(System.Data.OleDb.OleDbConnection@,System.String,System.String,System.Guid,System.String,System.Object)">
+	<summary>
+ Creates a SQL Statement from parametres passed and executes the statement
+ Delete all records in a table meeting the criteria
+ </summary>
+	<param name="conDB" type="OleDbConnection">
+ An oledb connection object
+ </param>
+	<param name="strTableName" type="String">
+ The table name from which to delete the row.
+ </param>
+	<param name="strIdField" type="String">
+ The name of the ID column in the table
+ </param>
+	<param name="guidValue" type="Guid">
+ The value of the Id of which the row to delete.
+ </param>
+	<param name="strAdditionalCheck" type="String">
+ An additional value to be checked for 
+ </param>
+	<returns>
+ An integer value of the number of rows affected by the execution.
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.DeleteDataRows(System.Data.OleDb.OleDbConnection@,System.String,System.String,System.Guid,System.String,System.Object,System.String)">
+	<summary>
+ Creates a SQL Statement from parametres passed and executes the statement
+ Delete all records in a table meeting the criteria
+ </summary>
+	<param name="conDB" type="OleDbConnection">
+ An oledb connection object
+ </param>
+	<param name="strTableName" type="String">
+ The table name from which to delete the row.
+ </param>
+	<param name="strIdField" type="String">
+ The name of the ID column in the table
+ </param>
+	<param name="guidValue" type="Guid">
+ The value of the Id of which the row to delete.
+ </param>
+	<param name="strAdditionalCheck" type="String">
+ An additional value to be checked for 
+ </param>
+	<param name="strContextInfo" type="String">
+ Used to get the context in which a specific user carried out certain actions
+ </param>
+	<returns>
+ An integer value of the number of rows affected by the execution.
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.DeleteDataRows(System.Data.OleDb.OleDbConnection@,System.String,System.String,System.DateTime)">
+	<summary>
+ Creates a SQL Statement from parametres passed and executes the statement
+ Delete all records in a table meeting the criteria
+ </summary>
+	<param name="conDB" type="OleDbConnection">
+ An oledb connection object
+ </param>
+	<param name="strTableName" type="String">
+ The table name from which to delete the row.
+ </param>
+	<param name="strIdField" type="String">
+ The name of the ID column in the table
+ </param>
+	<param name="dteValue" type="DateTime">
+ The value of the date of which the row to delete.
+ </param>
+	<returns>
+ An integer value of the number of rows affected by the execution.
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.LookupValue(System.Data.OleDb.OleDbConnection@,System.String,System.String,System.String,System.String,System.Boolean)">
+	<summary>
+ This function looks up a value from a lookup table in the database
+ </summary>
+	<param name="conDB" type="OleDbConnection">
+ An oledb connection object
+ </param>
+	<param name="strTableName" type="String">
+ The table name from which to delete the row.
+ </param>
+	<param name="strValueField" type="String">
+ The name of the ID column in the table
+ </param>
+	<param name="strTextField" type="String">
+ The name of the text column in the table
+ </param>
+	<param name="strSearchText" type="String">
+ The value to search the strTextField for
+ </param>
+	<param name="blAsInteger" type="Boolean">
+ True/false on whether the value is an integer 
+ </param>
+	<returns>
+ A string value returned from the execution of the SQL Statement
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.LookupID(System.Data.OleDb.OleDbConnection@,System.String,System.String,System.String,System.Object)">
+	<summary>
+ This function looks up an ID from a lookup table in the database
+ </summary>
+	<param name="conDB" type="OleDbConnection">
+ An oledb connection object
+ </param>
+	<param name="strTableName" type="String">
+ The table name from which to delete the row.
+ </param>
+	<param name="strValueField" type="String">
+ The name of the ID column in the table
+ </param>
+	<param name="strTextField" type="String">
+ The name of the text column in the table
+ </param>
+	<param name="objSearchText" type="Object">
+ The object value to search in the strTextField column for
+ </param>
+	<returns>
+ A string value returned from the execution of the SQL Statement
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.LookupValue(System.Data.OleDb.OleDbConnection@,System.String)">
+	<summary>
+ This function looks up a value from a lookup table in the database
+ </summary>
+	<param name="conDB" type="OleDbConnection">
+ An oledb connection object
+ </param>
+	<param name="strSQL" type="String">
+ The SQL Statement to be executed
+ </param>
+	<returns>
+	</returns>
+</member><member name="M:HomePage2.modDBFunctions.LookupValue(System.Data.OleDb.OleDbConnection@,System.String,System.String,System.String,System.Guid)">
+	<summary>
+ This function looks up a value from a lookup table in the database
+ </summary>
+	<param name="conDB" type="OleDbConnection">
+ An oledb connection object
+ </param>
+	<param name="strTableName" type="String">
+ The table name from which to delete the row.
+ </param>
+	<param name="strValueField" type="String">
+ The name of the ID column in the table
+ </param>
+	<param name="strTextField" type="String">
+ The name of the text column in the table
+ </param>
+	<param name="guidSearchValue" type="Guid">
+ The value to search the strTextField for
+ </param>
+	<returns>
+	</returns>
+</member><member name="M:HomePage2.modDBFunctions.ExistsInTable(System.Data.OleDb.OleDbConnection@,System.String,System.String,System.String)">
+	<summary>
+ The function checks if a specified value exists in a specific column of the table.
+ </summary>
+	<param name="conDB" type="OleDbConnection">
+ An oledb connection object
+ </param>
+	<param name="strTableName" type="String">
+ The table name from which to delete the row.
+ </param>
+	<param name="strFieldName" type="String">
+ The name of the column in the table to search the value for
+ </param>
+	<param name="strFieldValue" type="String">
+ The value to search for the in the specified DB table 
+ </param>
+	<returns>
+ A true/false indicating if the value specified exists in the DB table.
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.ExistsInTable(System.Data.OleDb.OleDbConnection@,System.String,System.String,System.DateTime)">
+	<summary>
+ The function checks if a specified value exists in a specific column of the table.
+ </summary>
+	<param name="conDB" type="OleDbConnection">
+ An oledb connection object
+ </param>
+	<param name="strTableName" type="String">
+ The table name from which to delete the row.
+ </param>
+	<param name="strFieldName" type="String">
+ The name of the column in the table to search the value for
+ </param>
+	<param name="dteFieldValue" type="Date">
+ The date value to search for the in the specified DB table 
+ </param>
+	<returns>
+ A true/false indicating if the value specified exists in the DB table.
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.ExistsInTable(System.Data.OleDb.OleDbConnection@,System.String,System.String,System.Int32)">
+	<summary>
+ The function checks if a specified value exists in a specific column of the table.
+ </summary>
+	<param name="conDB" type="OleDbConnection">
+ An oledb connection object
+ </param>
+	<param name="strTableName" type="String">
+ The table name from which to delete the row.
+ </param>
+	<param name="strFieldName" type="String">
+ The name of the column in the table to search the value for
+ </param>
+	<param name="intFieldValue" type="Integer">
+ The ID value to search for the in the specified DB table 
+ </param>
+	<returns>
+ A true/false indicating if the value specified exists in the DB table.
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.ExistsInTable(System.Data.OleDb.OleDbConnection@,System.String,System.String,System.Guid)">
+	<summary>
+ The function checks if a specified value exists in a specific column of the table.
+ </summary>
+	<param name="conDB" type="OleDbConnection">
+ An oledb connection object
+ </param>
+	<param name="strTableName" type="String">
+ The table name from which to delete the row.
+ </param>
+	<param name="strFieldName" type="String">
+ The name of the column in the table to search the value for
+ </param>
+	<param name="strGuidFieldValue" type="Guid">
+ The ID value to search for the in the specified DB table 
+ </param>
+	<returns>
+ A true/false indicating if the value specified exists in the DB table.
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.AccessFormat(System.DateTime)">
+	<summary>
+ The function formats a passed date value to an MSAccess-query-friendly value
+ </summary>
+	<param name="dteDate" type="Date">
+ The date value to be formatted
+ </param>
+	<returns>
+ A formatted version (MSAccess-query-friendly string) of the passed in parameter
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.AccessFormat(System.Int32)">
+	<summary>
+ The function formats a passed Integer value to an MSAccess-query-friendly value
+ </summary>
+	<param name="intInteger" type="Integer">
+ The Integer value to be formatted
+ </param>
+	<returns>
+ A formatted version (MSAccess-query-friendly string) of the passed in parameter
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.AccessFormat(System.Decimal)">
+	<summary>
+ The function formats a passed Decimal value to an MSAccess-query-friendly value
+ </summary>
+	<param name="decDecimal" type="Decimal">
+ The Decimal value to be formatted
+ </param>
+	<returns>
+ A formatted version (MSAccess-query-friendly string) of the passed in parameter
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.AccessFormat(System.Double)">
+	<summary>
+ The function formats a passed Double value to an MSAccess-query-friendly value
+ </summary>
+	<param name="dblDouble" type="Double">
+ The Double value to be formatted
+ </param>
+	<returns>
+ A formatted version (MSAccess-query-friendly string) of the passed in parameter
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.AccessFormat(System.Guid)">
+	<summary>
+ The function formats a passed Guid value to an MSAccess-query-friendly value
+ </summary>
+	<param name="guidGuid" type="Guid">
+ The Guid value to be formatted
+ </param>
+	<returns>
+ A formatted version (MSAccess-query-friendly string) of the passed in parameter
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.AccessFormat(System.String)">
+	<summary>
+ The function formats a passed String value to an MSAccess-query-friendly value
+ </summary>
+	<param name="strString" type="String">
+ The String value to be formatted
+ </param>
+	<returns>
+ A formatted version (MSAccess-query-friendly string) of the passed in parameter
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.AccessFormat(System.Boolean)">
+	<summary>
+ The function formats a passed Boolean value to an MSAccess-query-friendly value
+ </summary>
+	<param name="blnBoolean" type="Boolean">
+ The Boolean value to be formatted
+ </param>
+	<returns>
+ A formatted version (MSAccess-query-friendly string) of the passed in parameter
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.SQLFormatTrim(System.String)">
+	<summary>
+ The function formats a passed String value to a SQL-friendly value
+ The Function accepts a string that is to be trimmed, formats the statement to be accepted by SQL, using the LTRIM and RTRIM functions
+ </summary>
+	<param name="strSQL" type="String">
+ The String value to be trimmed.
+ </param>
+	<returns>
+ A formatted version (SQL-friendly string) of the passed in parameter
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.SQLFormat(System.DateTime)">
+	<summary>
+ The function formats a passed-in Date value to a SQL-friendly value
+ </summary>
+	<param name="dteDate" type="Date">
+ The Date value to be formatted
+ </param>
+	<returns>
+ A formatted version (SQL-friendly string) of the passed in parameter
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.SQLFormat(System.Int32)">
+	<summary>
+ The function formats a passed-in Integer value to a SQL-friendly value
+ </summary>
+	<param name="intInteger" type="Integer">
+ The Integer value to be formatted
+ </param>
+	<returns>
+ A formatted version (SQL-friendly string) of the passed-in parameter
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.SQLFormat(System.Decimal)">
+	<summary>
+ The function formats a passed-in Decimal value to a SQL-friendly value
+ </summary>
+	<param name="decDecimal" type="Decimal">
+ The Decimal value to be formatted
+ </param>
+	<returns>
+ A formatted version (SQL-friendly string) of the passed-in parameter
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.SQLFormat(System.Guid)">
+	<summary>
+ The function formats a passed-in Guid value to a SQL-friendly value
+ </summary>
+	<param name="guidGuid" type="Guid">
+ The Guid value to be formatted
+ </param>
+	<returns>
+ A formatted version (SQL-friendly string) of the passed-in parameter
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.SQLFormat(System.String)">
+	<summary>
+ The function formats a passed-in String value to a SQL-friendly value
+ </summary>
+	<param name="strString" type="String">
+ The String value to be formatted
+ </param>
+	<returns>
+ A formatted version (SQL-friendly string) of the passed-in parameter
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.SQLFormat(System.Boolean)">
+	<summary>
+ The function formats a passed-in Boolean value to a SQL-friendly value
+ </summary>
+	<param name="blnBoolean" type="Boolean">
+ The Boolean value to be formatted
+ </param>
+	<returns>
+ A formatted version (SQL-friendly string) of the passed-in parameter
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.DisplayDBValue(System.Int32)">
+	<summary>
+ The function formats the passed-in parameter as a readable string and returns that.
+ </summary>
+	<param name="intInteger" type="Integer">
+ The value in the DB to be displayed in a well formatted way.
+ </param>
+	<returns>
+ The formatted readable string value
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.DisplayDBValue(System.Decimal)">
+	<summary>
+ The function formats the passed-in parameter as a readable string and returns that.
+ </summary>
+	<param name="decDecimal" type="Decimal">
+ The value in the DB to be displayed in a well formatted way.
+ </param>
+	<returns>
+ The formatted readable string value
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.DisplayDBValue(System.DateTime,System.String)">
+	<summary>
+ The function formats the passed-in parameter as a readable string and returns that.
+ </summary>
+	<param name="dteDate" type="Date">
+ The value in the DB to be displayed in a well formatted way.
+ </param>
+	<param name="strFormat" type="String">
+ Optional - The format in which the Date value should be displayed (eg. "dd MM yyyy")
+ </param>
+	<returns>
+ The formatted readable string value
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.DBConnectionProvider(System.Data.OleDb.OleDbConnection)">
+	<summary>
+ The function determines the OleDBConnectionProvider from the Oledb object.
+ </summary>
+	<param name="conDB" type="OleDbConnection">
+ The oledb coneection of which the provider must be determined.
+ </param>
+	<returns>
+ An integer value indicating what provider is attached to the oledb connection 
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.DBConnectionProvider(System.String)">
+	<summary>
+ The function determines the OleDBConnectionProvider from the connection string supplied
+ Gets the Oledb connection object from the connection string and uses the function above to determine the provider
+ </summary>
+	<param name="strConnectionString" type="String">
+ The connection string of which the provider must be determined.
+ </param>
+	<returns>
+ An integer value indicating what provider is attached to the connection string
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.DBFormat(System.Data.OleDb.OleDbConnection,System.Object)">
+	<summary>
+ The function Opens the connection if it is not.
+ Determines what connection provider is attached to the connection object
+ Formats the object into a format that is either SQL-friendly or access-query-friendly depending on the connection provider
+ if SQL provider - uses sqlformat else uses AccessFormat
+ </summary>
+	<param name="conDB" type="OleDbConnection">
+ The connection object of which to get the connection provider
+ </param>
+	<param name="objObject" type="Object">
+ The object value to be formatted in a DB friendly string
+ </param>
+	<returns>
+ A string value that can be used in either Access Query or a SQL statement
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.DBFormat(System.String,System.Object)">
+	<summary>
+ The function gets the connection object from the connection string supplied
+ Then uses the function above to format the object supplied
+ </summary>
+	<param name="strConnectionString" type="String">
+ The connection string of which to get the connection string
+ </param>
+	<param name="objObject" type="Object">
+ The object value to be formatted in a DB friendly string
+ </param>
+	<returns>
+ A string value that can be used in either Access Query or a SQL statement
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.SelectDistinctFromDataTable(System.Data.DataTable,System.String[])">
+	<summary>
+ The function gets a datatable from the supplied datatable with distinct value of the strFieldNames
+ </summary>
+	<param name="dtSourceTable" type="DataTable">
+ The datatble from which to get a datatable with distinct values
+ </param>
+	<param name="strFieldNames" type="String">
+ The field names of which to get the distinct values in the datatable.
+ </param>
+	<returns>
+ A datatable with distinct values of the fields; strFieldnames
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.DataRowValuesAreEqual(System.Object[],System.Data.DataRow,System.String[])">
+	<summary>
+ The function checks if values in columns(specified) of a datarow are the same.
+ </summary>
+	<param name="objLastValues" type="Object">
+	</param>
+	<param name="drCurrentRow" type="DataRow">
+ The datarow in which to check for duplicate values
+ </param>
+	<param name="strFieldNames" type="String">
+ The names of columns in which to check for duplicates.
+ </param>
+	<returns>
+ A true/false indicating if values in 2 columns(specified) of the datarow are the same.
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.CopyDataRowValues(System.Data.DataRow,System.Data.DataRow,System.String[])">
+	<summary>
+ The function Copies datarow values from the source datarow to the destination (for specified column names only)
+ Note, the datarows need to have the same structure or this function will fail
+ </summary>
+	<param name="drSourceRow" type="DataRow">
+ The datarow from which the values are to be copied to the destination (for specified column names only)
+ </param>
+	<param name="drDestinationRow" type="DataRow">
+ The final datarow with the values (for specified column names only) of the source datarow values 
+ </param>
+	<param name="strFieldNames" type="String">
+ The names of the columns for which the values are to be copied to the destination row.
+ </param>
+	<returns>
+ The destination row with the copied values 
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.GetTableNames(System.Data.OleDb.OleDbConnection)">
+	<summary>
+ The function Gets a datatable of all the tables in the db connection
+ </summary>
+	<param name="conn" type="OleDbConnection">
+ The Oledb connection object
+ </param>
+	<returns>
+ A datatable from the DB connection 
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.CreateConnectionString_Access(System.String)">
+	<summary>
+ The function Creates as connection string for a access database
+ </summary>
+	<param name="strDataSource" type="String">
+ The datasource of which to get the connection string.
+ </param>
+	<returns>
+ A Jet OLEDB Connection string - For MSAccess DB connection
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.CreateConnectionString_Excel(System.String)">
+	<summary>
+ The function Creates as connection string for an excel database
+ </summary>
+	<param name="strDataSource" type="String">
+ The datasource of which to get the connection string.
+ </param>
+	<returns>
+ A Jet OLEDB Connection string - For MSExcel DB connection
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.BeginTransaction(System.Data.OleDb.OleDbConnection@)">
+	<summary>
+ The function starts up the specified transaction
+ </summary>
+	<param name="conDB" type="OleDbConnection">
+ The datasource of which to get the connection string.
+ </param>
+	<returns>
+ The transaction initiated.
+ </returns>
+</member><member name="M:HomePage2.modDBFunctions.WhereClauseFromArrayListOfGuids(System.Collections.ArrayList@,System.String,System.String)">
+	<summary>
+ The Function creates a where clause from the arraylist of guids, combining them with the logic in parameterblnLogic
+ </summary>
+	<param name="ArrayListOfGUIDS" type="ArrayList">
+ The arraylist that contains the guid values used to formulate the where clause.
+ </param>
+	<param name="strIDColumn" type="String">
+ The column column name from which are equaled to the arraylist values
+ </param>
+	<param name="blnLogic" type="String">
+ Either to use OR or AND in the whereclause
+ </param>
+	<returns>
+ A string value of the where clause
+ </returns>
+</member><member name="T:HomePage2.modDBFunctions">
+	<summary>
+ This module contains functions for interacting with the database
+ The functions all take a connection object as an argument, but all share a common connectin string
+ This allows for connection pooling
+ </summary>
+</member><member name="F:HomePage2.Home_WebParts.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HomePage2.Home_WebParts.WebPartManager1">
+	<summary>
+WebPartManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HomePage2.Home_WebParts.SidebarZone">
+	<summary>
+SidebarZone control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HomePage2.Home_WebParts.Label2">
+	<summary>
+Label2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HomePage2.Home_WebParts.RSSDisplay1">
+	<summary>
+RSSDisplay1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HomePage2.Home_WebParts.MainZone">
+	<summary>
+MainZone control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HomePage2.Home_WebParts.Label1">
+	<summary>
+Label1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="T:HomePage2.Home_WebParts">
+	<summary>
+Home_WebParts class.
+</summary>
+	<remarks>
+Auto-generated class.
+</remarks>
+</member><member name="F:HomePage2.tblRSSFeed_Editor.btnOK">
+	<summary>
+btnOK control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HomePage2.tblRSSFeed_Editor.btnCancel">
+	<summary>
+btnCancel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HomePage2.tblRSSFeed_Editor.btnSave">
+	<summary>
+btnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HomePage2.tblRSSFeed_Editor.grdRSSFeed">
+	<summary>
+grdRSSFeed control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="T:HomePage2.tblRSSFeed_Editor">
+	<summary>
+tblRSSFeed_Editor class.
+</summary>
+	<remarks>
+Auto-generated class.
+</remarks>
+</member><member name="M:HomePage2.Dilbert2.Dilbert.#ctor">
+	<remarks/>
+</member><member name="E:HomePage2.Dilbert2.Dilbert.TodaysDilbertCompleted">
+	<remarks/>
+</member><member name="E:HomePage2.Dilbert2.Dilbert.DailyDilbertCompleted">
+	<remarks/>
+</member><member name="M:HomePage2.Dilbert2.Dilbert.TodaysDilbert">
+	<remarks/>
+</member><member name="M:HomePage2.Dilbert2.Dilbert.BeginTodaysDilbert(System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:HomePage2.Dilbert2.Dilbert.EndTodaysDilbert(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:HomePage2.Dilbert2.Dilbert.TodaysDilbertAsync">
+	<remarks/>
+</member><member name="M:HomePage2.Dilbert2.Dilbert.TodaysDilbertAsync(System.Object)">
+	<remarks/>
+</member><member name="M:HomePage2.Dilbert2.Dilbert.DailyDilbert(System.DateTime)">
+	<remarks/>
+</member><member name="M:HomePage2.Dilbert2.Dilbert.BeginDailyDilbert(System.DateTime,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:HomePage2.Dilbert2.Dilbert.EndDailyDilbert(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:HomePage2.Dilbert2.Dilbert.DailyDilbertAsync(System.DateTime)">
+	<remarks/>
+</member><member name="M:HomePage2.Dilbert2.Dilbert.DailyDilbertAsync(System.DateTime,System.Object)">
+	<remarks/>
+</member><member name="M:HomePage2.Dilbert2.Dilbert.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:HomePage2.Dilbert2.Dilbert">
+	<remarks/>
+</member><member name="T:HomePage2.Dilbert2.TodaysDilbertCompletedEventHandler">
+	<remarks/>
+</member><member name="P:HomePage2.Dilbert2.TodaysDilbertCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:HomePage2.Dilbert2.TodaysDilbertCompletedEventArgs">
+	<remarks/>
+</member><member name="T:HomePage2.Dilbert2.DailyDilbertCompletedEventHandler">
+	<remarks/>
+</member><member name="P:HomePage2.Dilbert2.DailyDilbertCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:HomePage2.Dilbert2.DailyDilbertCompletedEventArgs">
+	<remarks/>
+</member><member name="M:HomePage2.WorldTimeWebService.WorldTimeWebService.#ctor">
+	<remarks/>
+</member><member name="E:HomePage2.WorldTimeWebService.WorldTimeWebService.GetTimeZonesCompleted">
+	<remarks/>
+</member><member name="E:HomePage2.WorldTimeWebService.WorldTimeWebService.GetTimeZoneInfoCompleted">
+	<remarks/>
+</member><member name="M:HomePage2.WorldTimeWebService.WorldTimeWebService.GetTimeZones">
+	<remarks/>
+</member><member name="M:HomePage2.WorldTimeWebService.WorldTimeWebService.BeginGetTimeZones(System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:HomePage2.WorldTimeWebService.WorldTimeWebService.EndGetTimeZones(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:HomePage2.WorldTimeWebService.WorldTimeWebService.GetTimeZonesAsync">
+	<remarks/>
+</member><member name="M:HomePage2.WorldTimeWebService.WorldTimeWebService.GetTimeZonesAsync(System.Object)">
+	<remarks/>
+</member><member name="M:HomePage2.WorldTimeWebService.WorldTimeWebService.GetTimeZoneInfo(System.String)">
+	<remarks/>
+</member><member name="M:HomePage2.WorldTimeWebService.WorldTimeWebService.BeginGetTimeZoneInfo(System.String,System.AsyncCallback,System.Object)">
+	<remarks/>
+</member><member name="M:HomePage2.WorldTimeWebService.WorldTimeWebService.EndGetTimeZoneInfo(System.IAsyncResult)">
+	<remarks/>
+</member><member name="M:HomePage2.WorldTimeWebService.WorldTimeWebService.GetTimeZoneInfoAsync(System.String)">
+	<remarks/>
+</member><member name="M:HomePage2.WorldTimeWebService.WorldTimeWebService.GetTimeZoneInfoAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:HomePage2.WorldTimeWebService.WorldTimeWebService.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:HomePage2.WorldTimeWebService.WorldTimeWebService">
+	<remarks/>
+</member><member name="P:HomePage2.WorldTimeWebService.TimeZoneInfo.Name">
+	<remarks/>
+</member><member name="P:HomePage2.WorldTimeWebService.TimeZoneInfo.DaylightName">
+	<remarks/>
+</member><member name="P:HomePage2.WorldTimeWebService.TimeZoneInfo.StandardName">
+	<remarks/>
+</member><member name="P:HomePage2.WorldTimeWebService.TimeZoneInfo.DisplayName">
+	<remarks/>
+</member><member name="P:HomePage2.WorldTimeWebService.TimeZoneInfo.UtcOffsetTicks">
+	<remarks/>
+</member><member name="P:HomePage2.WorldTimeWebService.TimeZoneInfo.CurrentTimeTicks">
+	<remarks/>
+</member><member name="P:HomePage2.WorldTimeWebService.TimeZoneInfo.IsInDaylightSaving">
+	<remarks/>
+</member><member name="T:HomePage2.WorldTimeWebService.TimeZoneInfo">
+	<remarks/>
+</member><member name="T:HomePage2.WorldTimeWebService.GetTimeZonesCompletedEventHandler">
+	<remarks/>
+</member><member name="P:HomePage2.WorldTimeWebService.GetTimeZonesCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:HomePage2.WorldTimeWebService.GetTimeZonesCompletedEventArgs">
+	<remarks/>
+</member><member name="T:HomePage2.WorldTimeWebService.GetTimeZoneInfoCompletedEventHandler">
+	<remarks/>
+</member><member name="P:HomePage2.WorldTimeWebService.GetTimeZoneInfoCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:HomePage2.WorldTimeWebService.GetTimeZoneInfoCompletedEventArgs">
+	<remarks/>
+</member>
+</members>
+</doc>

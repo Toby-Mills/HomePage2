@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://www.quantumsoftware.com.au/WorldTimeWebService/WorldTimeWebService.asmx?wsdl" docRef="http://www.quantumsoftware.com.au/WorldTimeWebService/WorldTimeWebService.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://www.quantumsoftware.com.au/WorldTimeWebService/WorldTimeWebService.asmx" xmlns:q1="http://www.quantumsoftware.com.au/WorldTimeWebService/" binding="q1:WorldTimeWebServiceSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://www.quantumsoftware.com.au/WorldTimeWebService/WorldTimeWebService.asmx" xmlns:q2="http://www.quantumsoftware.com.au/WorldTimeWebService/" binding="q2:WorldTimeWebServiceSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>
